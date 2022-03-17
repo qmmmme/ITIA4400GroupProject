@@ -1,0 +1,53 @@
+:root {
+   --header-color: gold;
+   --font-color: #aed3e1;
+   --bg-color: green;
+}
+
+body {
+   color: var(--font-color);
+   font-size: 12px;
+   font-family: Arial, serif;
+   background-color: var(--bg-color);
+   background-image: url('image68.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+      
+h1 {
+   color: var(--header-color);
+   text-align: center;
+   font-size: 4rem;
+ }
+      
+h2 {
+   color: var(--header-color);
+   position: absolute;
+   top: 30px;
+   right: 20px;
+   font-size: 20px;
+}
+
+a:link {
+   color: var(--font-color);  
+}   
+
+a:visited {
+   color: var(--font-color);
+}   
+
+a:hover {
+   color: gold; 
+}
+a:active {
+   color:  purple;
+}
+
+.active {
+   color: purple; 
+   background-color: white;
+}
+nav a {
+   float: right;
+   padding: 0px 10px;
+}
