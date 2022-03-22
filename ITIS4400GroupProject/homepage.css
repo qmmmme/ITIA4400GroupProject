@@ -9,7 +9,7 @@ body {
    font-size: 12px;
    font-family: Arial, serif;
    background-color: var(--bg-color);
-   background-image: url('image68.jpg');
+   background-image: url('hpimg.webp');
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -42,6 +42,7 @@ a:hover {
 a:active {
    color:  purple;
 }
+
 
 .active {
    color: purple; 
