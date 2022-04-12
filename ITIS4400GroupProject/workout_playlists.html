@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<title>Workout Playlists</title>
 	<!-- Add a favicon for the page -->
-	<link rel="icon" type="image/png" href="icon1.jpg">
 	<link rel="stylesheet" type="text/css" href="workout_playlists.css">
-	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -15,9 +16,6 @@
 		<nav>
 			<!-- create a navigation-->
 			<h2>Workout Playlists</h2>
-			<!-- <img src="icon1.jpg" alt="GDPT icon" id="gdpt"> -->
-			<!-- for searching content -->
-			<input type="search" id="search" class="ui-autocomple" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="on" style="float: right;">
 
 			<a href="workout_playlists.html" class="active">Workout Playlist</a> &nbsp;
 			<a href="track_process.html">Process Tracking</a> &nbsp;
@@ -29,7 +27,25 @@
 	</header>
 	
 	<main>
-		
+
+		<h2>Workout Videos</h2>
+		<div id="default_videos"></div>
+		<div id="container" style="margin-left: 20px;">	
+			<form>
+				<div class="input-field">
+					<label for="searchquery">Find another video...</label>
+					<input type="text" id="searchquery"/>
+				
+					<input type="submit" id="searchbtn" value="search">
+					
+				</div>
+			</form>
+		<div id="loader">Loading...</div> 
+		<div id="videos"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
 		
 	</main>
 	<footer>
@@ -43,6 +59,7 @@
 				</ul>
 			</div>	
 	</footer>
-	<script src="index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="youtubeapi.js"></script>
 </body>
 </html>
