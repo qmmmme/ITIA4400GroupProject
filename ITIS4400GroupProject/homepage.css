@@ -1,12 +1,12 @@
 :root {
    --header-color: gold;
-   --font-color: #aed3e1;
+   --font-color: coral;
    --bg-color: green;
 }
 
 body {
    color: var(--font-color);
-   font-size: 12px;
+   font-size: 30px;
    font-family: Arial, serif;
    background-color: var(--bg-color);
    background-image: url('hpimg.webp');
@@ -27,7 +27,9 @@ h2 {
    right: 20px;
    font-size: 20px;
 }
-
+a {
+   text-decoration: none;
+}
 a:link {
    color: var(--font-color);  
 }   
@@ -45,89 +47,12 @@ a:active {
 
 
 .active {
-   color: purple; 
+   color: chocolate; 
    background-color: white;
+   border-radius: 4px;
 }
-/*a {
-   display: inline-block;
-   text-decoration: none;
-   font-size: 30px;
-   border: 1px solid transparent;
-   transition: 0.6s ease;
-   margin-right:  5px;
-}
-#gdpt {
-   width: 250px;
-   height: 200px;
-   top: 10px;
-}*/
+
 nav a {
    float: right;
    padding: 0px 10px;
-}
-/*input[type=search] {
-   float:  right;
-   margin-right: 30px;
-   width: 250px;
-   height: 30px;
-   background-image: url("https://resources.zybooks.com/WebProgramming/searchiconv1.png");
-   background-position: 3px 3px;
-   background-repeat: no-repeat;
-   background-color: lightyellow;
-   color: black;
-}*/
-/*#mission {
-   text-align: center;
-   font-size: 4rem;
-   font-family: algerian;
-   color: #FF3D00;
-   text-shadow: 2px -2px darkred;
-}
-.mission{
-   text-align: center;
-   font-size: 3rem;
-   font-family: serif;
-   color:  #FF3D00;
-   text-shadow: 2px 2px darkorange;
-   vertical-align: initial;
-}
-*/
-
-#contact, #check {
-   text-align: left;
-   font-size: 3rem;
-   font-family: fantasy;
-   color:  #28DC28;
-   text-shadow: 1px 1px darkred;
-}
-footer {
-   font-size: 1em;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-}
-/*footer a {
-   font-size: 20px;
-}
-.contact {
-   flex: 1 50%;
-   order: 1;
-}
-.check {
-   flex: 1 50%;
-   order: 2;
-}
-ul {
-   list-style-type: none;
-}
-body .ui-autocomplete {
-  color:  gold;
-  font-weight: bold;
-  font-size: 20px;
-}
-#chi-tam, #huong-hai, #hoa-nghiem, #tuong-van, #hue-quang {
-   display: none;
-   position: absolute;
-   right: 30px;
-   top: 200px;*/
 }

@@ -5,7 +5,8 @@ $(window).on("load", function(e){
 
 	let queryString = "gym workout";
 	let part = "snippet";
-	let api_key = "AIzaSyAwMm0aEgAHfZj_o54gt2df0bQKf_aIkUo";
+	// let api_key = "AIzaSyAwMm0aEgAHfZj_o54gt2df0bQKf_aIkUo";
+	let api_key = "AIzaSyB_Ul4-_3PUdBPCyXBjP5cGOZGNpGM4RMg";//second api 
 	let type = "video";
 	let max_result = 5;
 	let url = "https://www.googleapis.com/youtube/v3/search?part="+part+"&q="+queryString+"&type="+type+"&maxResults="+max_result+"&key="+api_key+"";
@@ -35,7 +36,8 @@ $(window).on("load", function(e){
 						<div class="video${i}">
 							
 								<iframe width="280" height="150" src="https://www.youtube.com/embed/${latestVideos[i].id.videoId}" frameborder="0" allowfullscreen></iframe>
-								<h3>${latestVideos[i].snippet.title}</h3>
+								<p>${latestVideos[i].snippet.title}</p>
+								<p>Published Time: ${latestVideos[i].snippet.publishTime}</p>
 							
 						</div>
 					`;
@@ -71,7 +73,8 @@ $(document).ready( function (){
 		// $("#default_news").hide();
 		let queryString = $("#searchquery").val();
 		let part = "snippet";
-		let api_key = "AIzaSyAwMm0aEgAHfZj_o54gt2df0bQKf_aIkUo";
+		// let api_key = "AIzaSyAwMm0aEgAHfZj_o54gt2df0bQKf_aIkUo";
+		let api_key = "AIzaSyB_Ul4-_3PUdBPCyXBjP5cGOZGNpGM4RMg";//second api 
 		let type = "video";
 		let max_result = 5;
 		let url = "https://www.googleapis.com/youtube/v3/search?part="+part+"&q="+queryString+"&type="+type+"&maxResults="+max_result+"&key="+api_key+"";
@@ -100,7 +103,8 @@ $(document).ready( function (){
 							<div class="video${i}">
 							
 								<iframe width="280" height="150" src="https://www.youtube.com/embed/${latestVideos[i].id.videoId}" frameborder="0" allowfullscreen></iframe>
-								<h3>${latestVideos[i].snippet.title}</h3>
+								<p>${latestVideos[i].snippet.title}</p>
+								<p>Published Time: ${latestVideos[i].snippet.publishTime}</p>
 							
 							</div>
 						`;
