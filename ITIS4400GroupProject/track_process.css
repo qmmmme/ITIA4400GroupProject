@@ -1,6 +1,6 @@
 :root {
    --header-color: gold;
-   --font-color: coral;
+   --font-color: coral ;
    --bg-color: green;
 }
 
@@ -48,13 +48,20 @@ a:active {
 .active {
    color: purple; 
    background-color: white;
-   border-radius: 4px;
 }
 nav a {
    float: right;
    padding: 0px 10px;
 }
-
+#displayDiv{
+   font-size: 12px;
+}
+#displayDiv > h3 {
+   font-size: 15px;
+}
+h3 {
+   font-size: 20px;
+}
 #fileUpload{
    position: absolute;
    font-size: large;
@@ -117,9 +124,7 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
    position: relative;
    left: 5px;
 }
-footer {
-   margin-top: 60px;
-}
+
 
 
 
