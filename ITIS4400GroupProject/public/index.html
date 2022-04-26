@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<!-- Add a favicon for the page -->
+	<link rel="icon" type="image/png" href="icon1.jpg">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+	<header>
+		<h1>Go Go Workout</h1>
+		<nav>
+			<!-- create a navigation-->
+			<h2>Home Page</h2>
+				
+			<a href="workout_playlists.html">Workout Playlist</a> &nbsp;
+			<a href="track_process.html">Process Tracking</a> &nbsp;
+			<a href="recipes.html">Workout Recipes</a> &nbsp;
+			<a href="music_playlists.html">Music Playlists</a> &nbsp;
+			<a href="index.html" class="active">Home Page</a> &nbsp;
+
+		</nav>	
+	</header>
+	
+	<main>
+		<div id="login">
+			<div>
+				<h1> Login Form </h1>
+			</div>      
+			<form>  
+				<div class="group">   
+					<label>Username : </label>   
+					<input id="txtEmail" type="text" placeholder="Enter Your Email" name="username" required> 
+				</div> 
+				<div class="group">     
+					<label>Password : </label>   
+					<input id="txtPassword" type="password" placeholder="Enter Password" name="password" required>
+				</div>
+				<div id= "divLoginError" class="group">     
+					<div id="lblLogiErrorMessage" class="errorlabel"></div>
+				</div>
+				<div id= "divAuthState" class="group">     
+					<div id="lblAuthState"></div>
+				</div>
+				<div class="group">       
+					<button id="btnLogin" type="submit" onclick="login()">Login</button>
+				<div id="group">     
+					<button id="btnSignup" type="submit" onclick="registe()">Signup</button>
+				</div>
+				<div class="group">         
+					<button id="btnLogout" type="submit">Logout</button>
+				</div>
+				<div class="group"> 
+					<input type="checkbox" checked="checked"> Remember me
+				</div>
+				<div class="group">        
+					<button type="button" class="cancelbtn"> Cancel</button>   
+					Forgot <a href="#"> password? </a>   
+				</div>   
+			</form>
+		</div>
+		<div id="app"> This is APP UI</div>     
+			
+		 
+	</div>	 		
+		
+	</main>
+	<footer>
+			
+ 			<div class="contact">
+ 				<p id="contact">Contact Us:</p>
+ 				<ul>
+ 					<li><a href="mailto:gogo.workout.service@gmail.com">Email to: gogo.workout.service@gmail.com</a></li>
+ 					<li><a href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070973,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">Address: 69201 University City Blvd, Charlotte, NC 28223</a></li>
+ 					<li><span>Call Us: </span><a href="tel:7044923892">(01) 704-492-1335</a></li>
+				</ul>
+			</div>	
+	</footer>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="news_api.js"></script> -->
+	<!-- <script src="index.js"></script> -->
+</body>
+
+	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-datastore.js"></script>
+	<script src="index.js"></script>
+
+</html>
