@@ -9,7 +9,6 @@ body {
    font-size: 12px;
    font-family: Arial, serif;
    background-color: var(--bg-color);
-   background-image: url('image68.jpg');
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -17,7 +16,6 @@ body {
 h1 {
    color: var(--header-color);
    position: absolute;
-
    right: 650px;
    text-align: center;
    font-size: 7rem;
