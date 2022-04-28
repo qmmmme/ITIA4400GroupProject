@@ -3,7 +3,7 @@ The team at GOGO is dedicated to making fitness easy. We created an online space
 				where you can access all of your fitness needs in ONE location. We believe, any movement
 				is good movement!<br>
     
-    We could only make the firebase hosting work but not the firebase authentication because we using simple HTML, CSS, and JS
+We could only make the firebase hosting work but not the firebase authentication because we using simple HTML, CSS, and JS
 that would not approriate with firebase authentication setup(Even we tried many ways to construct the signin page via youtube video,
 and the google firebase site.
 
