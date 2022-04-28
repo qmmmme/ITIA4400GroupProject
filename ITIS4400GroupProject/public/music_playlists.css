@@ -1,7 +1,7 @@
 :root {
-   --header-color: gold;
-   --font-color: coral;
-   --bg-color: green;
+   --header-color: #00bbc9;
+   --font-color: #00747c;
+   --bg-color: #cacaca;
 }
 
 body {
@@ -9,52 +9,68 @@ body {
    font-size: 30px;
    font-family: Arial, serif;
    background-color: var(--bg-color);
-   background-image: url('wkmsimg.jpeg');
    background-repeat: no-repeat;
    background-size: cover;
 }
       
 h1 {
    color: var(--header-color);
+   position: absolute;
+
+   right: 650px;
    text-align: center;
-   font-size: 4rem;
+   font-size: 7rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
       
-h2 {
-   color: var(--header-color);
+ h2 {
+   color: #00747c;
    position: absolute;
-   top: 30px;
-   right: 20px;
+   top: 195px;
+   right: 675px;
    font-size: 20px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 a {
    text-decoration: none;
 }
 a:link {
-   color: var(--font-color);  
+   color: #202022;  
 }   
 
 a:visited {
-   color: var(--font-color);
+   color: #202022;
 }   
 
 a:hover {
-   color: gold; 
+   color: #202022; 
 }
-a:active {
-   color:  purple;
-}
+
 .active {
-   color: chocolate; 
-   background-color: white;
-   border-radius: 4px;
+   color: #202022; 
+   background-color: #00bbc9;
 }
 nav a {
    float: right;
    padding: 0px 10px;
 }
-
+nav{
+   position: absolute;
+   right: 450px;
+}
+ button{
+  font-size: 20px;
+}
 #table {
    margin-left: auto;
    margin-right: auto;
+   position: absolute;
+   top: 275px;
+   left: 270px;
+}
+footer{
+   position: absolute;
+   top: 1100px;
+   left: 10px;
+   font-size: small;
 }

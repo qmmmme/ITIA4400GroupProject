@@ -18,7 +18,7 @@ h1 {
    color: var(--header-color);
    position: absolute;
 
-   right: 600px;
+   right: 650px;
    text-align: center;
    font-size: 7rem;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -28,7 +28,7 @@ h2 {
    color: #00747c;
    position: absolute;
    top: 195px;
-   right: 645px;
+   right: 675px;
    font-size: 20px;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

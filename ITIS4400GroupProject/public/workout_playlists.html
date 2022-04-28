@@ -12,34 +12,31 @@
 </head>
 <body>
 	<header>
-		<h1>Go Go Workout</h1>
+		
 		<nav>
 			<!-- create a navigation-->
-			<h2>Workout Playlists</h2>
-
-			<a href="workout_playlists.html" class="active">Workout Playlist</a> &nbsp;
-			<a href="track_process.html">Process Tracking</a> &nbsp;
-			<a href="recipes.html">Workout Recipes</a> &nbsp;
-			<a href="music_playlists.html">Music Playlists</a> &nbsp;
-			<a href="index.html">Home Page</a> &nbsp;
+		
+			<button class="active"><a href="workout_playlists.html">Routines</a></button> &nbsp;
+			<button ><a href="track_process.html">Progress</a></button> &nbsp;
+			<button><a href="recipes.html"> Recipes</a></button> &nbsp;
+			<button><a href="music_playlists.html">Music</a></button> &nbsp;
+			<button><a href="index.html">Home </a></button> &nbsp;
 			
 		</nav>	
+		<h1>GoGo</h1>
+		<h2>View The Best Routines!</h2>
+		<div class="input-field">
+			<input type="text" id="searchquery" placeholder="Search Youtube..."/>
+		
+			<input type="submit" id="searchbtn" value="Search">
+			
+		</div>
 	</header>
 	
 	<main>
 
-		<h2>Workout Videos</h2>
 		
 		<div id="container">	
-			<form>
-				<div class="input-field">
-					<label for="searchquery">Find Youtube Videos That You Like</label>
-					<input type="text" id="searchquery" placeholder="Search"/>
-				
-					<input type="submit" id="searchbtn" value="Search">
-					
-				</div>
-			</form>
 		<div id="loader">Loading...</div> 
 		<div id="default_videos"></div>
 		<div id="videos"></div>

@@ -1,5 +1,6 @@
 
-	import { initializeApp } from "firebase/app";
+/*
+    import { initializeApp } from "firebase/app";
 	import { getAnalytics } from "firebase/analytics";
     import {
         getAuth,
@@ -196,3 +197,5 @@
 // 	await signOut(auth);
 // }
 // btnLogout.addEventListener("Click", signOut);
+*/
+
