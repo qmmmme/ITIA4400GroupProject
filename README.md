@@ -1,4 +1,4 @@
-# ITIA4400GroupProject
+# ITIA4440GroupProject
 The team at GOGO is dedicated to making fitness easy. We created an online space
 				where you can access all of your fitness needs in ONE location. We believe, any movement
 				is good movement!<br>
