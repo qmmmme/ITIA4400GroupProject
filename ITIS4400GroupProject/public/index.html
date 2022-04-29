@@ -1,76 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Home Page</title>
-	<!-- Add a favicon for the page -->
-	<link rel="icon" type="image/png" href="icon1.jpg">
-	<link rel="stylesheet" type="text/css" href="homepage.css">
-</head>
-<body>
-	<header>
-		
-		<nav>
-			<!-- create a navigation-->
-			
-				
-			<button><a href="workout_playlists.html">Routines</a></button> &nbsp;
-			<button><a href="track_process.html">Progress</a></button> &nbsp;
-			<button><a href="recipes.html"> Recipes</a></button> &nbsp;
-			<button><a href="music_playlists.html">Music</a></button> &nbsp;
-			<button class="active"><a href="index.html">Home </a></button> &nbsp;
+<!DOCTYPE html>   
+<html lang="en">   
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-US-Compatible" content="IE-edge">
+    <title> Sign-In Page </title>  
+    <link type="text/css" rel="stylesheet" href="signin.css" />
+   <!--- <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <script type="text/javascript" src="signin.js"></script>-->
+</head>    
+<body>    
+    <h1>  Log In: </h1>
+   <div id="login">    
+        <form method="POST" action="index.html">  
+            <div class="group">   
+                <label>Username : </label>   
+                <input id="email" type="text" placeholder="Enter Your Email" name="username" required> 
+            </div> 
+            <div class="group">     
+                <label>Password : </label>   
+                <input id="password" type="password" placeholder="Enter Password" name="password" required>
+            </div>
+            <div id= "divLoginError" class="group">     
+                <div id="lblLogiErrorMessage" class="errorlabel"></div>
+            </div>
+            <div id= "divAuthState" class="group">     
+                <div id="lblAuthState"></div>
+            </div>
+            <div class="group">       
+               <button id="myBtn" type="submit"  onclick="login()">Log In</button>
+               <br><br>
+            <div class="group"> 
+                <input type="checkbox" checked="checked"> Remember me
+            </div> 
+        </form>
+    </div>   
+    <script>
+      // const btn = document.getElementById("myBtn");
+      // const email = document.getElementById("email");
+      // const pwd = document.getElementById("password");
+      
+      function login() {
+        const email = document.getElementById("email");
+        const pwd = document.getElementById("password");
+        if((email !== '') && (pwd !== '')) {
+          location.replace("https://gogo-43911.web.app/homepage.html");
+        }
+      }
+      // btn.addEventListener("click", login);
+  </script>
 
-		</nav>	
-		<h1>GoGo</h1>
-		<h2>Home</h2>
-	</header>
-	
-	<main>
+</body>    
 
-		<img src="deadliftimg.jpeg" id="deadlift"><br>
-		<img src="Fleximg.jpeg" height="300px" width="300px" id="flex">
-		<img src="fistbumpimg.jpeg" id="fistbump">
-		<img src="yogaimg.jpeg" id="yoga">
-		<img src="pushingimg.jpeg" id="pushing">
-		<img src="situpimg.jpeg" id="situp">
-
-		<div id="rectangle">
-			<p>
-				<h3>Welcome to GOGO</h3>
-				The team at GOGO is dedicated to making fitness easy. We created an online space
-				where you can access all of your fitness needs in ONE location. We believe, any movement
-				is good movement!<br>
-
-				<h3>Our mission</h3>
-				"To help as many people as possible acheive the benefits of a healthy lifestyle."
-				
-				
-			</p>
-		</div>
-	   
-				
-		
-	</main>
-	<footer>
-			
- 			<div class="contact">
-				 <br>
- 				<p id="contact">Contact Us:</p>
- 				<ul>
- 					<li><a href="mailto:gogo.workout.service@gmail.com">Email to: gogo.workout.service@gmail.com</a></li>
- 					<li><a href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070973,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">Address: 69201 University City Blvd, Charlotte, NC 28223</a></li>
- 					<li><span>Call Us: </span><a href="tel:7044923892">(01) 704-492-1335</a></li>
-				</ul>
-			</div>	
-	</footer>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="news_api.js"></script> -->
-	<!-- <script src="index.js"></script> -->
-</body>
-
-	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-datastore.js"></script>
-	<script src="index.js"></script>
-
-</html>
+</html> 
