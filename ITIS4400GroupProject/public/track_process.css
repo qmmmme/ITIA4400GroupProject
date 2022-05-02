@@ -50,6 +50,7 @@ a:hover {
 nav a {
    float: right;
    padding: 0px 10px;
+ 
 }
 nav{
    position: absolute;
@@ -123,4 +124,6 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 footer{
    font-size: small;
 }
+
+
 
