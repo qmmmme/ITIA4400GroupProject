@@ -50,7 +50,6 @@ a:hover {
 nav a {
    float: right;
    padding: 0px 10px;
- 
 }
 nav{
    position: absolute;
@@ -125,5 +124,6 @@ footer{
    font-size: small;
 }
 
-
-
+a {
+   text-decoration: none;
+}
